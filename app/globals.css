@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 :root {
+  --font-body:'Geist', sans-serif;
+  --green: #049D75;
+  --green-deep: #037857;
   --ink: #14231c;
   --ink-rgb: 10, 38, 32;
   --pitch: #1b5e3f;
@@ -22,7 +27,7 @@ body {
   margin: 0;
   background: var(--chalk);
   color: var(--ink);
-  font-family: var(--body);
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.5;
 }
@@ -52,6 +57,36 @@ a {
 
 .logo:focus-visible {
   outline-color: var(--yellow);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px 10px 10px 4px;
+  background: linear-gradient(155deg, var(--green) 0%, var(--green-deep) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.brand:hover .brand-mark {
+  transform: rotate(-8deg) scale(1.06);
+}
+
+.brand-mark svg {
+  width: 16px;
+  height: 16px;
 }
 
 .wrap {
