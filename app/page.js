@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import FooterInicio from '@/components/FooterInicio';
+import Footer from '@/components/Footer';
 
 export default function Bienvenida() {
   return (
