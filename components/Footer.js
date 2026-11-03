@@ -1,29 +1,20 @@
-export default function Footer() {
+import Link from 'next/link';
+
+// Pie de página solo para la página de inicio
+export default function FooterInicio() {
   return (
-    <footer>
-      <div className="wrap">
-        <div className="footer-grid">
-          <div className="footer-brand">
-            <a href="/" className="brand">
-              <span className="brand-mark qd-mark">Q</span>
-              Qvandev
-            </a>
-            <p>Apps simples y útiles, hechas con foco en Cuba.</p>
-          </div>
-
-          <div className="footer-links">
-            <div className="footer-col">
-              <h4>Contacto</h4>
-              <a href="mailto:alessandroguez98@gmail.com">Correo</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="footer-bottom">
-          <span>© 2026 Qvandev.</span>
-          <span>Hecho en Cuba</span>
-        </div>
+    <footer className="footer-inicio">
+      <div>
+        <p className="footer-logo">LaCopa</p>
+        <p className="footer-texto">
+          Tabla de posiciones, partidos por día y marcador en vivo para tu campeonato de fútbol.
+        </p>
       </div>
+      <nav className="footer-links" aria-label="Enlaces del pie de página">
+        <Link href="/campeonatos">Campeonatos</Link>
+        <Link href="/login">Acceso de administrador</Link>
+      </nav>
+      <p className="footer-copy">© {new Date().getFullYear()} LaCopa</p>
     </footer>
   );
 }

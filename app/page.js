@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Footer from '@/components/Footer';
+import FooterInicio from '@/components/FooterInicio';
 
 export default function Bienvenida() {
   return (
@@ -11,8 +11,8 @@ export default function Bienvenida() {
           marcador en vivo de tu torneo de fútbol. Sin planillas ni grupos de mensajes.
         </p>
         <div className="hero-acciones">
-          <Link href="/campeonatos" className="btn btn-amarillo">Ver campeonatos</Link>
-          <Link href="/login" className="btn btn-borde">Administrar una copa</Link>
+          <Link href="/campeonatos" className="btn btn-amarillo">Campeonatos</Link>
+          <Link href="/login" className="btn btn-borde">Administrar un torneo</Link>
         </div>
       </section>
 
@@ -44,9 +44,9 @@ export default function Bienvenida() {
           botón. Define cuántos minutos dura cada tiempo, inicia el partido, anota goles y tarjetas,
           y la tabla se actualiza sola.
         </p>
-        <Link href="/login" className="btn">Entar</Link>
+        <Link href="/login" className="btn">Entrar</Link>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }
