@@ -37,7 +37,6 @@ export default function Tabla({ teams, matches }) {
             <path d="M12 11v6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             <circle cx="12" cy="7.5" r="1.3" fill="currentColor" />
           </svg>
-          Siglas
         </button>
       </div>
 
