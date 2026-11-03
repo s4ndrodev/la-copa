@@ -1083,6 +1083,7 @@ textarea {
 footer {
   border-top: 1px solid var(--line);
   padding: 56px 0 40px;
+  background: var(--pitch-dark);
 }
 
 .footer-grid {
