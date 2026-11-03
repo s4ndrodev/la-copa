@@ -33,7 +33,6 @@ export default function Campeonato() {
 
   return (
     <>
-      <Link href="/campeonatos" className="volver">← Campeonatos</Link>
       <h1 className="campeonato-titulo">{champ.name}</h1>
 
       <div className="tabs" role="tablist">

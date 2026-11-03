@@ -11,7 +11,7 @@ export default function Bienvenida() {
         </p>
         <div className="hero-acciones">
           <Link href="/campeonatos" className="btn btn-amarillo">Ver campeonatos</Link>
-          <Link href="/login" className="btn btn-borde">Entrar como administrador</Link>
+          <Link href="/login" className="btn btn-borde">Administrar una copa</Link>
         </div>
       </section>
 
@@ -43,7 +43,7 @@ export default function Bienvenida() {
           botón. Define cuántos minutos dura cada tiempo, inicia el partido, anota goles y tarjetas,
           y la tabla se actualiza sola.
         </p>
-        <Link href="/login" className="btn">Entrar al panel</Link>
+        <Link href="/login" className="btn">Entar</Link>
       </section>
     </>
   );
