@@ -260,7 +260,6 @@ a.item-link:hover strong { color: var(--pitch); text-decoration: underline; }
 .hora { font-weight: 600; color: var(--pitch); margin-right: auto; }
 
 @media (max-width: 560px) {
-  .forma-col { display: none; }
   .wrap { padding-left: 12px; padding-right: 12px; }
   .marcador { grid-template-columns: 1fr 48px auto 48px 1fr; gap: 6px; font-size: 15px; }
 }
@@ -531,4 +530,19 @@ textarea {
 
 @media (max-width: 560px) {
   .footer-inicio { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  /* La tabla se desliza de lado en el móvil, así que Forma queda al final */
+  .tabla { min-width: 560px; }
+  .tabla th, .tabla td { padding: 8px 6px; }
+  .tabla .pos { width: 30px; font-size: 18px; }
+  .tabla .pts { font-size: 20px; }
+
+  /* El nombre del equipo se queda fijo mientras se desliza */
+  .tabla .eq { position: sticky; left: 0; z-index: 1; padding-left: 8px; }
+  .tabla td.eq { background: var(--paper); }
+
+  .forma { gap: 2px; }
+  .punto { width: 17px; height: 17px; font-size: 10px; line-height: 17px; }
 }
