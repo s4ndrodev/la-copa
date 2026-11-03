@@ -1,5 +1,6 @@
 :root {
   --ink: #14231c;
+  --ink-rgb: 10, 38, 32;
   --pitch: #1b5e3f;
   --pitch-dark: #0f3d2a;
   --chalk: #f2f5ef;
@@ -1003,7 +1004,7 @@ textarea {
 }
 
 @media (max-width: 640px) {
-
+  
   .det-grid,
   .alineaciones {
     grid-template-columns: 1fr;
@@ -1041,4 +1042,79 @@ textarea {
   margin: 0;
   color: var(--win);
   font-weight: 500;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 56px 0 40px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.footer-brand p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: rgba(var(--ink-rgb), 0.55);
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.footer-col h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: rgba(var(--ink-rgb), 0.85);
+}
+
+.footer-col a {
+  display: block;
+  font-size: 14.5px;
+  color: rgba(var(--ink-rgb), 0.58);
+  margin-bottom: 10px;
+  position: relative;
+  width: fit-content;
+}
+
+.footer-col a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -2px;
+  height: 1px;
+  background: rgb(var(--ink-rgb));
+  transition: right 0.25s ease;
+}
+
+.footer-col a:hover {
+  color: rgb(var(--ink-rgb));
+}
+
+.footer-col a:hover::after {
+  right: 0;
+}
+
+.footer-bottom {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: rgba(var(--ink-rgb), 0.45);
 }

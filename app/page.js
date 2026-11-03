@@ -45,6 +45,7 @@ export default function Bienvenida() {
         </p>
         <Link href="/login" className="btn">Entar</Link>
       </section>
+      <Footer/>
     </>
   );
 }
